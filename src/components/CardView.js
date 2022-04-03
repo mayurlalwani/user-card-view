@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import useFetchData from '../custom-hooks/useFetchData';
-import UserCard from './UserCard';
-import '../styles/styles.css';
-import ClipLoader from 'react-spinners/ClipLoader';
+import React from 'react';
 import { PulseLoader } from 'react-spinners';
+import useFetchData from '../custom-hooks/useFetchData';
+import '../styles/styles.css';
+import UserCard from './UserCard';
 
 const CardView = () => {
   const { userData, loading, error } = useFetchData();

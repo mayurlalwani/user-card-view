@@ -10,7 +10,7 @@ const UserCard = ({ userData }) => {
           height="75px"
           width="75px"
           src={userData.image.replace('?user', userData.name)}
-          alt="Image"
+          alt={userData.name}
         />
       </div>
       <div className="bottom-section">
